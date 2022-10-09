@@ -8,7 +8,10 @@ const App = () => {
  useEffect(() => {
   fetch(`https://content.newtonschool.co/v1/pr/main/users/${id}`)
   .then(res=>res.json())
-  .then(result=>setName(result))
+  .then(result => {
+   console.log(result);
+    setName(result);
+  })
  },[id])
  
 const changeInput =(e) => {
