@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/App.css';
+import useState from react 
 import { useState, useEffect } from 'react';
 const App = () => {
  const [name,setName] = useState([]);
@@ -20,6 +21,7 @@ const changeInput =(e) => {
 
   return (
     <div className="App">
+   
       <h1 id="text">Type a number between 1 and 10</h1>
       <input id="input" onChange={changeInput} />
       <p id="name">{name.name}</p>
